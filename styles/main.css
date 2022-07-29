@@ -155,13 +155,21 @@ body {
 }
 
 .activities_ctnr .outer_card {
-  height: 30px;
+  height: 24px;
   border-radius: 1em;
 }
 
+.activities_ctnr .outer_card svg {
+  position: relative;
+  right: 20px;
+  float: right;
+}
+
 .activities_ctnr .inner_card {
+  position: relative;
   background-color: #1c1f4a;
   border-radius: 1em;
+  z-index: 100;
 }
 
 .attribution {
