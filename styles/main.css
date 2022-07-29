@@ -102,6 +102,68 @@ body {
   color: white;
 }
 
+.activities_ctnr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activities_ctnr .card_container {
+  width: 350px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.activities_ctnr .card_container_1 {
+  background-color: #ff8c66;
+  border-radius: 1em;
+}
+
+.activities_ctnr .card_container_2 {
+  background-color: #56c2e6;
+  border-radius: 1em;
+}
+
+.activities_ctnr .card_container_3 {
+  background-color: #ff5c7c;
+  border-radius: 1em;
+}
+
+.activities_ctnr .card_container_4 {
+  background-color: #4acf81;
+  border-radius: 1em;
+}
+
+.activities_ctnr .card_container_5 {
+  background-color: #7536d3;
+  border-radius: 1em;
+}
+
+.activities_ctnr .card_container_6 {
+  background-color: #f1c65b;
+  border-radius: 1em;
+}
+
+.activities_ctnr .outer_card {
+  height: 30px;
+  border-radius: 1em;
+}
+
+.activities_ctnr .inner_card {
+  background-color: #1c1f4a;
+  border-radius: 1em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

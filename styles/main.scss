@@ -91,6 +91,53 @@ body{
 }
 
 
+.activities_ctnr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .card_container{
+        width: 350px;
+        height: auto;
+        margin-bottom: 1em;
+    }
+    .card_container_1{
+       background-color: $LightRed;
+        border-radius: 1em;
+    }
+    .card_container_2{
+       background-color: $SoftBlue;
+        border-radius: 1em;
+    }
+    .card_container_3{
+       background-color: $LightRedPlus;
+        border-radius: 1em;
+    }
+    .card_container_4{
+       background-color: $LimeGreen;
+        border-radius: 1em;
+    }
+    .card_container_5{
+       background-color: $Violet;
+        border-radius: 1em;
+    }
+    .card_container_6{
+       background-color: $SoftOrange;
+        border-radius: 1em;
+    }
+    
+    .outer_card{
+        //width: 350px;
+        height: 30px;
+        border-radius: 1em;
+    }
+    .inner_card{
+        background-color: $DarkBlue;
+        border-radius: 1em;
+    }
+}
+
 .attribution{
     font-size: 11px; text-align: center;
         a{ 
