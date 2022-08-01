@@ -155,21 +155,54 @@ body {
 }
 
 .activities_ctnr .outer_card {
-  height: 24px;
+  height: 44px;
   border-radius: 1em;
 }
 
 .activities_ctnr .outer_card svg {
-  position: relative;
-  right: 20px;
+  position: absolute;
+  right: 90px;
   float: right;
 }
 
 .activities_ctnr .inner_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   background-color: #1c1f4a;
   border-radius: 1em;
   z-index: 100;
+  min-height: 120px;
+}
+
+.activities_ctnr .inner_card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.activities_ctnr .inner_card svg {
+  float: right;
+}
+
+.activities_ctnr .inner_card .present_time {
+  font-size: 36px;
+  font-weight: 400;
+  margin: .5em 0;
+}
+
+.activities_ctnr .inner_card .previous_time {
+  margin: 1.5em 0;
+  position: relative;
+  top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #bdc1ff;
 }
 
 .attribution {

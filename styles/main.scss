@@ -129,21 +129,52 @@ body{
     
     .outer_card{
         //width: 350px;
-        height: 24px;
+        height: 44px;
         border-radius: 1em;
 
         svg{
-            position: relative;
-            right: 20px;
+            position: absolute;
+            right: 90px;
             float: right;
         }
     }
     .inner_card{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         position: relative;
         background-color: $DarkBlue;
         border-radius: 1em;
         z-index: 100;
+        min-height: 120px;
+        //min-width: 350px;
         //height: 120px;
+
+        h3{
+            //margin: 1em;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        svg{
+            float: right;
+           // position: relative;
+            //bottom: 20px;
+            //margin: 1em 0;
+        }
+        .present_time{
+            font-size: 36px;
+            font-weight: 400;
+            margin: .5em 0;
+        }
+        .previous_time{
+            margin: 1.5em 0;
+            position: relative;
+            top: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $PaleBlue;
+        }
+        
     }
 }
 
