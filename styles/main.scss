@@ -35,8 +35,8 @@ body{
 
 .profile_container{
     margin: 2em 0;
-    min-width: 350px;
-    min-height: auto;
+    width: 350px;
+    height: auto;
     background-color: $DarkBlue;
     border-radius: 1em;
     
@@ -53,6 +53,7 @@ body{
             transform: scale(.6, .6);
             border: 5px solid white;
             border-radius: 50%;
+            cursor: pointer;
           }
         h1{
             font-size: 25px;
@@ -83,6 +84,7 @@ body{
                 color: $PaleBlue;
             &:hover{
                 color: white;
+                cursor: pointer;
              }
             }
             
@@ -128,14 +130,14 @@ body{
     }
     
     .outer_card{
-        //width: 350px;
+        width: 350px;
         height: 44px;
         border-radius: 1em;
 
         svg{
-            position: absolute;
-            right: 90px;
-            float: right;
+            //position: sticky;
+            //left: 65%;
+            transform: translate(250px, 0px);
         }
     }
     .inner_card{
@@ -152,18 +154,27 @@ body{
 
         h3{
             //margin: 1em;
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 500;
         }
-        svg{
+        .options_btn{
             float: right;
+            path{
+                fill: $PaleBlue;
+            }
            // position: relative;
             //bottom: 20px;
             //margin: 1em 0;
+            &:hover{
+                cursor: pointer;
+                path{
+                    fill: white;
+                }
+            }
         }
         .present_time{
-            font-size: 36px;
-            font-weight: 400;
+            font-size: 38px;
+            font-weight: 300;
             margin: .5em 0;
         }
         .previous_time{
@@ -179,8 +190,173 @@ body{
 }
 
 .attribution{
-    font-size: 11px; text-align: center;
+    font-size: 11px; 
+    text-align: center;
         a{ 
             color: hsl(228, 45%, 44%); 
         }
+}
+
+
+
+              /*******----------------***MEDIA QUERIES***------------------********/
+
+/*----------------@min-width 825px--------------*/
+
+@media only screen and(min-width: 825px){
+    body{
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: "user activity"
+                             "user activity"
+                             "footer footer";
+        gap: 2em;
+        //width: 100%;
+        height: 100vh;
+    }
+    
+    .profile_container{
+        grid-area: user;
+        margin: 0;
+        width: 230px;
+        //min-height: auto;
+        .profileInner_ctnr{
+            //background-color: $Blue;
+            //display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            //border-radius: 1em;
+            //padding: .5em;
+            //height: 380px;
+            img{
+                //width: 120px;
+                //height: 120px;
+                transform: scale(.65, .65);
+                //border: 5px solid white;
+                //border-radius: 50%;
+              }
+            h1{
+                font-size: 32px;
+                //font-weight: 300;
+                margin: 0em .5em .9em .4em;
+                padding: .5em .5em 1em .5em;
+                span{
+                    font-size: 14px;
+                    //display: block;
+                    //color: $PaleBlue;
+                    margin-bottom: .5em;
+                }
+            }
+           
+        }
+    
+        .profileOuter_ctnr{
+    
+            ul{
+                //display: flex;
+                flex-direction: column;
+                //justify-content: space-evenly;
+                align-items: flex-start;
+                //margin-top: 0;
+                padding: 1em .8em 0em 1em;
+                
+                li{
+                    padding: .5em;
+                    list-style: none;
+                    color: $PaleBlue;
+               /* &:hover{
+                    color: white;
+                    cursor: pointer;
+                 }*/
+                }
+                
+            }
+        }
+    }
+    
+    
+    .activities_ctnr{
+        grid-area: activity;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 2em;
+        //flex-direction: column;
+        //justify-content: center;
+        //align-items: center;
+        
+        .card_container{
+            width: 220px;
+            height: auto;
+            margin-bottom: 0;
+        }
+        
+        .outer_card{
+            //width: 350px;
+            //height: 44px;
+            //border-radius: 1em;
+    
+            svg{
+                //position: sticky;
+                //left: 65%;
+                transform: translate(125px, 0px);
+            }
+        }
+        .inner_card{
+            display: block;
+            //justify-content: unset;
+            //align-items: unset;
+            position: relative;
+            //background-color: $DarkBlue;
+            //border-radius: 1em;
+            //z-index: 100;
+            //min-height: 120px;
+            //min-width: 350px;
+            height: 170px;
+    
+            h3{
+                margin: 0 0 1em 1em;
+                padding-top: 1em;
+                font-size: 18px;
+                //font-weight: 700;
+            }
+            .options_btn{
+                //float: right;
+                position: relative;
+                right: 20px;
+                bottom: 95px;
+                //margin: 1em 0;
+               /* &:hover{
+                    cursor: pointer;
+                }
+                */
+            }
+            .present_time{
+                //font-size: 38px;
+                //font-weight: 300;
+                margin: .5em .5em .2em .5em;
+            }
+            .previous_time{
+                margin: 1em 1.5em;
+                position: unset;
+                //top: 20px;
+                //font-size: 14px;
+                //font-weight: 500;
+                //color: $PaleBlue;
+            }
+            
+        }
+    }
+    
+    .attribution{
+        grid-area: footer;
+        //background-color: black;
+        font-size: 11px; 
+        text-align: unset;
+            a{ 
+                color: hsl(228, 45%, 44%); 
+            }
+    }
+
 }
