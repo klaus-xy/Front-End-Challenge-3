@@ -171,8 +171,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -181,15 +182,28 @@ body {
   border-radius: 1em;
   z-index: 100;
   min-height: 120px;
+  /*.yesterday{
+            display: block;
+        }
+        .last_week{
+            display: none;
+        }
+        .last_month{
+            display: none;
+        }
+        */
 }
 
 .activities_ctnr .inner_card h3 {
+  margin: 1em;
   font-size: 18px;
   font-weight: 500;
 }
 
 .activities_ctnr .inner_card .options_btn {
-  float: right;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .activities_ctnr .inner_card .options_btn path {
@@ -207,16 +221,29 @@ body {
 .activities_ctnr .inner_card .present_time {
   font-size: 38px;
   font-weight: 300;
-  margin: .5em 0;
+  margin: .5em .5em;
+  width: 100px;
 }
 
 .activities_ctnr .inner_card .previous_time {
-  margin: 1.5em 0;
+  margin: 1.5em 1em;
   position: relative;
   top: 20px;
   font-size: 14px;
   font-weight: 500;
   color: #bdc1ff;
+}
+
+.activities_ctnr .inner_card .daily {
+  display: block;
+}
+
+.activities_ctnr .inner_card .weekly {
+  display: none;
+}
+
+.activities_ctnr .inner_card .monthly {
+  display: none;
 }
 
 .attribution {
@@ -229,8 +256,8 @@ body {
 }
 
 /*******----------------***MEDIA QUERIES***------------------********/
-/*----------------@min-width 825px--------------*/
-@media only screen and (min-width: 825px) {
+/*----------------@min-width 1025px--------------*/
+@media only screen and (min-width: 1025px) {
   body {
     display: -ms-grid;
     display: grid;
@@ -324,9 +351,7 @@ body {
     font-size: 18px;
   }
   .activities_ctnr .inner_card .options_btn {
-    position: relative;
-    right: 20px;
-    bottom: 95px;
+    position: absolute;
     /* &:hover{
                     cursor: pointer;
                 }
@@ -345,7 +370,7 @@ body {
     -ms-grid-column-span: 2;
     grid-area: footer;
     font-size: 11px;
-    text-align: unset;
+    text-align: center;
   }
   .attribution a {
     color: #3e52a3;

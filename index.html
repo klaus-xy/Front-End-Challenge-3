@@ -18,9 +18,9 @@
       </div>
       <div class="profileOuter_ctnr">
         <ul>
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <li id="daily_btn">Daily</li>
+          <li id="weekly_btn">Weekly</li>
+          <li id="monthly_btn">Monthly</li>
         </ul>
       </div>
     </div>
@@ -28,28 +28,28 @@
 
  <div class="activities_ctnr">
 <!------------WORK---------------->
-  <div class="card_container card_container_1">
+  <div class="card_container card_container_1" id="work">
     <div class="outer_card">
       <svg width="79" height="79" xmlns="http://www.w3.org/2000/svg"><path d="m18.687 10.43 15.464 30.906c.31.682.743 1.322 1.3 1.88.558.557 1.198.99 1.714 1.217L68.237 59.98 52.484 75.732a8.025 8.025 0 0 1-11.355 0L2.934 37.538a8.025 8.025 0 0 1 0-11.356L18.687 10.43Zm19.345-7.99 10.839 10.838 2.065-2.064a5.845 5.845 0 0 1 8.258 0l8.258 8.259a5.845 5.845 0 0 1 0 8.258l-2.064 2.064 10.839 10.84a8.025 8.025 0 0 1 0 11.355l-4.728 4.728L39.126 40.53a1.963 1.963 0 0 1-.578-.413 1.963 1.963 0 0 1-.413-.578L21.95 7.168l4.728-4.728a8.025 8.025 0 0 1 11.355 0Zm17.033 12.903-2.064 2.065 8.258 8.258 2.064-2.064-8.258-8.259Z" fill="#D96C47" fill-rule="nonzero"/></svg>
     </div>
     <div class="inner_card">
       <div class="left">
         <h3>Work</h3>
-        <p class="present_time">32hrs</p>  <!-- daily -->
+        <p class="present_time"> <span class="daily"> 22hrs </span> 
+                                 <span class="weekly"> 82hrs </span> 
+                                 <span class="monthly"> 128hrs </span> 
+        </p>
         </div>
       <div class="right">
         <svg  class="options_btn" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-        <p class="previous_time">Last Week - 32hrs</p>
+        <p class="previous_time"> <span class="daily"> Yesterday - 7hrs </span> 
+                                  <span class="weekly"> Last Week - 36hrs </span> 
+                                  <span class="monthly"> Last Month - 118hrs </span> 
+        </p>
       </div>
-      
-      
-      <!--Previous - 7hrs  daily -->
-      <!-- 32hrs weekly -->
-      <!-- Previous - 36hrs weekly -->
-      <!-- 103hrs monthly -->
-      <!-- Previous - 128hrs  monthly -->
     </div>
   </div>
+  
   <!------------PLAY---------------->
   <div class="card_container card_container_2">
     <div class="outer_card">
@@ -58,11 +58,18 @@
     <div class="inner_card">
       <div class="left">
         <h3>Play</h3>
-        <p class="present_time">10hrs</p>  <!-- daily -->
+        <p class="present_time"> 
+                                  <span class="daily"> 12hrs </span> 
+                                  <span class="weekly"> 42hrs </span> 
+                                  <span class="monthly"> 98hrs </span> 
+        </p>
         </div>
       <div class="right">
         <svg class="options_btn" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-        <p class="previous_time">Last Week - 8hrs</p>
+        <p class="previous_time"> <span class="daily"> Yesterday - 5hrs </span> 
+                                  <span class="weekly"> Last Week - 35hrs </span> 
+                                  <span class="monthly"> Last Month - 101hrs </span> 
+        </p>
       </div>
   </div>
   </div>
@@ -75,11 +82,19 @@
     <div class="inner_card">
       <div class="left">
         <h3>Study</h3>
-        <p class="present_time">4hrs</p>  <!-- daily -->
+        <p class="present_time"> 
+                                  <span class="daily"> 8hrs </span> 
+                                  <span class="weekly"> 18hrs </span> 
+                                  <span class="monthly"> 76hrs </span> 
+        </p>
         </div>
       <div class="right">
         <svg class="options_btn" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-        <p class="previous_time">Last Week - 7hrs</p>
+        <p class="previous_time">
+                                  <span class="daily"> Yesterday - 7hrs </span> 
+                                  <span class="weekly"> Last Week - 26hrs </span> 
+                                  <span class="monthly"> Last Month - 58hrs </span>
+        </p>
       </div>
     </div>
   </div>
@@ -92,11 +107,18 @@
     <div class="inner_card">
       <div class="left">
         <h3>Exercise</h3>
-        <p class="present_time">4hrs</p>  <!-- daily -->
+        <p class="present_time">
+                                  <span class="daily"> 2hrs </span> 
+                                  <span class="weekly"> 10hrs </span> 
+                                  <span class="monthly"> 38hrs </span> 
+        </p> 
         </div>
       <div class="right">
         <svg class="options_btn" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-        <p class="previous_time">Last Week - 5hrs</p>
+        <p class="previous_time">
+                                    <span class="daily"> Yesterday - 2hrs </span> 
+                                    <span class="weekly"> Last Week - 9hrs </span> 
+                                    <span class="monthly"> Last Month - 34hrs </span></p>
       </div>
     </div>
   </div>
@@ -109,11 +131,19 @@
   <div class="inner_card">
     <div class="left">
       <h3>Social</h3>
-      <p class="present_time">5hrs</p>  <!-- daily -->
+      <p class="present_time">
+                                <span class="daily"> 9hrs </span> 
+                                <span class="weekly"> 40hrs </span> 
+                                <span class="monthly"> 111hrs </span> 
+      </p>
       </div>
     <div class="right">
       <svg class="options_btn" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-      <p class="previous_time">Last Week - 10hrs</p>
+      <p class="previous_time">
+                                  <span class="daily"> Yesterday - 7hrs </span> 
+                                  <span class="weekly"> Last Week - 32hrs </span> 
+                                  <span class="monthly"> Last Month - 177hrs </span>
+      </p>
     </div>
   </div>
 </div>
@@ -126,11 +156,19 @@
   <div class="inner_card">
     <div class="left">
       <h3>Self Care</h3>
-      <p class="present_time">2hrs</p>  <!-- daily -->
+      <p class="present_time">
+                                <span class="daily"> 2hrs </span> 
+                                <span class="weekly"> 5hrs </span> 
+                                <span class="monthly"> 20hrs </span> 
+      </p>
       </div>
     <div class="right">
       <svg class="options_btn" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-      <p class="previous_time">Last Week - 2hrs</p>
+      <p class="previous_time">
+                                  <span class="daily"> Yesterday - 3hrs </span> 
+                                  <span class="weekly"> Last Week - 6hrs </span> 
+                                  <span class="monthly"> Last Month - 19hrs </span>
+      </p>
     </div>
   </div>
 </div>
@@ -142,6 +180,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Klaus</a>.
   </div>
+
+  <!-------------------JAVA-SCRIPT----------------------->
+  <script src="/index.js"></script>
 
 </body>
 </html>
