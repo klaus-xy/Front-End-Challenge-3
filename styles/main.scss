@@ -31,6 +31,7 @@ body{
     font-weight: 400;
     color: white;
     margin: 0;
+    animation: fadeIn .5s ease-in-out 0s;
 }
 
 .profile_container{
@@ -39,6 +40,7 @@ body{
     height: auto;
     background-color: $DarkBlue;
     border-radius: 1em;
+    animation: dropIn 1s ease-in-out;
     
     .profileInner_ctnr{
         background-color: $Blue;
@@ -103,6 +105,7 @@ body{
         width: 350px;
         height: auto;
         margin-bottom: 1em;
+        animation: dropIn 1s ease-in-out;
     }
     .card_container_1{
        background-color: $LightRed;
@@ -151,6 +154,10 @@ body{
         min-height: 120px;
         //min-width: 350px;
         //height: 120px;
+        &:hover{
+            background-color: hsl(235, 44%, 40%);
+            cursor: pointer;
+        }
 
         h3{
             margin: 1em;
@@ -220,7 +227,24 @@ body{
         }
 }
 
-
+//ANIMATIONS
+//Fade In
+@keyframes dropIn{
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
               /*******----------------***MEDIA QUERIES***------------------********/
 

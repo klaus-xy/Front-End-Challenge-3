@@ -31,6 +31,8 @@ body {
   font-weight: 400;
   color: white;
   margin: 0;
+  -webkit-animation: fadeIn .5s ease-in-out 0s;
+          animation: fadeIn .5s ease-in-out 0s;
 }
 
 .profile_container {
@@ -39,6 +41,8 @@ body {
   height: auto;
   background-color: #1c1f4a;
   border-radius: 1em;
+  -webkit-animation: dropIn 1s ease-in-out;
+          animation: dropIn 1s ease-in-out;
 }
 
 .profile_container .profileInner_ctnr {
@@ -124,6 +128,8 @@ body {
   width: 350px;
   height: auto;
   margin-bottom: 1em;
+  -webkit-animation: dropIn 1s ease-in-out;
+          animation: dropIn 1s ease-in-out;
 }
 
 .activities_ctnr .card_container_1 {
@@ -194,6 +200,11 @@ body {
         */
 }
 
+.activities_ctnr .inner_card:hover {
+  background-color: #394193;
+  cursor: pointer;
+}
+
 .activities_ctnr .inner_card h3 {
   margin: 1em;
   font-size: 18px;
@@ -253,6 +264,46 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@-webkit-keyframes dropIn {
+  from {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes dropIn {
+  from {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*******----------------***MEDIA QUERIES***------------------********/
