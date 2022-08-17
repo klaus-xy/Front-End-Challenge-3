@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/klaus-xy/Front-End-Challenge-3)
+- Live Site URL: (https://klaus117fec3.netlify.app)
 
 ## My process
 
