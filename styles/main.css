@@ -128,8 +128,8 @@ body {
   width: 350px;
   height: auto;
   margin-bottom: 1em;
-  -webkit-animation: dropIn 1s ease-in-out;
-          animation: dropIn 1s ease-in-out;
+  -webkit-animation: slideIn 1s ease-in-out;
+          animation: slideIn 1s ease-in-out;
 }
 
 .activities_ctnr .card_container_1 {
@@ -266,7 +266,7 @@ body {
   color: #3e52a3;
 }
 
-@-webkit-keyframes dropIn {
+@-webkit-keyframes slideIn {
   from {
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
@@ -277,7 +277,7 @@ body {
   }
 }
 
-@keyframes dropIn {
+@keyframes slideIn {
   from {
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
@@ -285,6 +285,28 @@ body {
   to {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes dropIn {
+  from {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes dropIn {
+  from {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 

@@ -40,7 +40,7 @@ body{
     height: auto;
     background-color: $DarkBlue;
     border-radius: 1em;
-    //animation: dropIn 1s ease-in-out;
+    animation: dropIn 1s ease-in-out;
     
     .profileInner_ctnr{
         background-color: $Blue;
@@ -105,7 +105,7 @@ body{
         width: 350px;
         height: auto;
         margin-bottom: 1em;
-        animation: dropIn 1s ease-in-out;
+        animation: slideIn 1s ease-in-out;
     }
     .card_container_1{
        background-color: $LightRed;
@@ -229,12 +229,20 @@ body{
 
 //ANIMATIONS
 //Fade In
-@keyframes dropIn{
+@keyframes slideIn{
     from{
         transform: translateX(-20%);
     }
     to{
         transform: translateX(0%);
+    }
+}
+@keyframes dropIn{
+    from{
+        transform: translateY(-10%);
+    }
+    to{
+        transform: translateY(0%);
     }
 }
 @keyframes fadeIn{
